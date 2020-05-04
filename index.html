@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/y.css">
+  <link rel="stylesheet" href="./css/mdui.min.css">
+  <link rel="stylesheet" href="./css/animate.min.css">
+  <title>慕容潭谈的介绍页</title>
+  <link rel="icon" type="image/png" href="./favicon.ico">
+</head>
+<body class="mdui-theme-primary-indigo mdui-appbar-with-toolbar mdui-theme-accent-pink">
+  <div class="mdui-appbar mdui-appbar-fixed">
+    <div class="mdui-toolbar mdui-color-indigo">
+      <a class="mdui-btn mdui-btn-icon" mdui-drawer="{target: '#drawer'}">
+      <i class="mdui-icon material-icons">&#xe5d2;</i></a>
+      <span class="mdui-typo-title">慕容潭谈的个人介绍页</span>
+      <div class="mdui-toolbar-spacer"></div>
+    </div>
+  </div>
+
+  <div class="mdui-fab-wrapper" mdui-fab="{trigger: 'hover'}">
+    <a href="#top" class="mdui-fab mdui-ripple mdui-color-pink mdui-fab-fixed">
+      <i class="mdui-icon material-icons">&#xe5d8;</i></a>
+  </div>
+
+  <div class="mdui-drawer mdui-drawer-close" id="drawer">
+      <ul class="mdui-list" mdui-collapse="{accordion: true}" style="max-width: 360px;">
+          <a class="mdui-list-item mdui-ripple mdui-text-color-theme mdui-list-item-active">
+            <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-red">home</i>
+            <div class="mdui-list-item-content">首页</div>
+          </a>
+          <a class="mdui-list-item mdui-ripple" href="https://www.backroad.site/" target="_blank">
+            <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-green">book</i>
+            <div class="mdui-list-item-content">个人博客</div>
+          </a>
+          <a class="mdui-list-item mdui-ripple" href="https://www.ahympia.com/" target="_blank">
+            <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-blue">layers</i>
+            <div class="mdui-list-item-content">Larvend Ahympia</div>
+          </a>
+      </ul>
+  </div>
+
+  <div id="main">
+    <div id="avatar-container">
+      <img id="avatar" alt="点我点我" src="./img/avatar.png" onclick="showbb()">
+      <a id="bb">嘛……</a>
+    </div>
+    <h2 id="title">慕容潭谈</h2>
+    <p id="title-des">Hoshino Haruka</p>
+
+    <div id="content">
+      <p>现居浙江的天朝高中生。</p>
+      <br/>
+      <p>小学因为个人兴趣接触到了HTML，初一到初二系统学习了一年多的C<span class="p-inv">A</span>+<span class="p-inv">C</span>+<span class="p-inv">M</span>。现在因为想做Unity3D所以在自学C#。</p>
+      <br/>
+      <p>信奥课几乎都在搞服务器这类东西，以至于到现在<del>扒</del>搭网站一类的活儿已经是驾轻就熟。<br/>
+        <small>就比如这个网站就是从<a href="https://xn--18su5j71q.space/" target="_blank">季悠然</a>那儿扒下来的。只不过因为深受Material风影响自己加了点东西上去。</small>
+      </p>
+      <br/>
+      <p>
+        爱好是瞎搞，专长是扯淡。涉猎领域广泛但无一精通，志向远大目标明确但缺乏执行力。<br/>
+        <small>平时因为面瘫会被陌生人说高冷不好接近，但实际上极为沙雕。</small>
+      </p>
+      <br/>
+      <p>
+        <a style="font-size:20px;font-weight:200;" href="https://www.backroad.site/" target="_blank">个人博客</a>嘛……也许是一时兴起的产物，但也不知不觉地陪我走过四年了呢。
+      </p>
+
+    </div>
+  </div>
+  <script>
+  function showbb(){
+    document.getElementById("bb").classList.add('display','animated', 'fadeIn');
+  }
+  </script>
+
+  <script src="./js/smooth-scroll.min.js"></script>
+  <script>var scroll = new SmoothScroll("a[href*='#']");</script>
+
+</body>
+<script src="./js/mdui.min.js"></script>
+</html>
