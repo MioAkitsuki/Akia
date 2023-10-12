@@ -1,6 +1,2 @@
 # Self-Introduction-Page
- Adapted from MDUI and mouto.org/季悠然.space
- 
- Hosted on Stormkit
- 
- Preview: hibiki.ink
+### Obsoleted and archived. Thank MDUI for its companying at that time.
